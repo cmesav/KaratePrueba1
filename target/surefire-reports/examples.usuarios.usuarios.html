@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.usuarios.usuarios</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-09-29 05:36:17 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:6]">[1:6] get all users and then get the first user by id </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:29]">[2:29] create a new user </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/usuarios/usuarios.feature</span><span class="feature-description">sample karate test script</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">get all users and then get the first user by id </span>
+</div>
+<div class="scenario-time passed">ms: 5449</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://reqres.in/api'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">17:36:09.210 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">3925</div>
+</div>
+<div class="preformatted" data-parent="3">17:36:10.218 request:
+1 &gt; GET https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_302)
+
+17:36:13.197 response time in milliseconds: 2971,19
+1 &lt; 200
+1 &lt; Age: 3667
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 6968b064eac3031c-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 29 Sep 2021 22:36:12 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=icQS2Fz%2Fk6YLEy6md6%2FuzvEZJo3Aik9Q1%2FXX63WCdlsYTfUNCsRgNmwxYB9moviJROyE5EOJhA%2FqFSxJlXXQQ6I6QRDQJtbYPcbYjvVy7jvyiXdRDBHsWEwpAHY%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; access-control-allow-origin: *
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 &lt; etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 &lt; via: 1.1 vegur
+1 &lt; x-powered-by: Express
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* def primero = response.data[0]</div>
+</div>
+<div class="time-cell passed">46</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* print primero</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="6">17:36:13.256 [print] {
+  "last_name": "Bluth",
+  "id": 1,
+  "avatar": "https://reqres.in/img/faces/1-image.jpg",
+  "first_name": "George",
+  "email": "george.bluth@reqres.in"
+}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Given path 'users', primero.id</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1457</div>
+</div>
+<div class="preformatted" data-parent="8">17:36:13.268 request:
+2 &gt; GET https://reqres.in/api/users/1
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: reqres.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_302)
+
+17:36:14.721 response time in milliseconds: 1452,35
+2 &lt; 200
+2 &lt; Age: 1572
+2 &lt; CF-Cache-Status: HIT
+2 &lt; CF-RAY: 6968b06f2b5f67e1-MIA
+2 &lt; Cache-Control: max-age=14400
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Wed, 29 Sep 2021 22:36:14 GMT
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gkpIPQjMt6ZTo3yCZcrNt%2BzMzrmkTOitzxGzwvK4ZV%2BD3gTNcPuHXyiWs4WVn%2B2jxznHRzkDBZ20hoE6nHr7Dj5aYUcLqwbrFZNpK4FRsZTBJPPqq9Idd8rOvjE%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+2 &lt; access-control-allow-origin: *
+2 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+2 &lt; etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+2 &lt; via: 1.1 vegur
+2 &lt; x-powered-by: Express
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And assert primero.id == '1'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And match primero ==</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="11">{
+  "last_name": "Bluth",
+  "id": 1,
+  "avatar": "https://reqres.in/img/faces/1-image.jpg",
+  "first_name": "George",
+  "email": "george.bluth@reqres.in"
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:29]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:29]</span><span class="scenario-name">create a new user </span>
+</div>
+<div class="scenario-time passed">ms: 2447</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:29]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:29]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-cell passed">* url 'https://reqres.in/api'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">17:36:14.745 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">* def user =</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="13">{
+  "first_name": "Pepe",
+  "last_name": "Table"
+}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Given url 'https://reqres.in/api/users'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Given request user</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2433</div>
+</div>
+<div class="preformatted" data-parent="16">17:36:14.754 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 41
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_302)
+{"first_name":"Pepe","last_name":"Table"}
+
+17:36:17.180 response time in milliseconds: 2425,45
+1 &lt; 201
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 6968b07d4a5e0345-MIA
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 91
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 29 Sep 2021 22:36:17 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nAdz5u9%2BitkYoYX12h4VFYUt%2F1bKLnH7WXL9sRMHuCleEezWhCvohU1RwmZIt7%2FF6vmJQ%2BpSXm3nq5Th9lNGcSgVk2mzDfjb0HvGnz%2BNC673M3vrUrZb4Ky8Mkg%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; access-control-allow-origin: *
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 &lt; etag: W/"5b-eUloga2j2l/Atk3AaZ0cmdYuAYM"
+1 &lt; via: 1.1 vegur
+1 &lt; x-powered-by: Express
+{"first_name":"Pepe","last_name":"Table","id":"383","createdAt":"2021-09-29T22:36:17.034Z"}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And match response ==</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="18">{
+  "createdAt": '#notnull',
+  "last_name": "Table",
+  "id": '#notnull',
+  "first_name": "Pepe"
+}</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">* print 'el resp es: ', response</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="19">17:36:17.194 [print] el resp es:  {
+  "createdAt": "2021-09-29T22:36:17.034Z",
+  "last_name": "Table",
+  "id": "383",
+  "first_name": "Pepe"
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
